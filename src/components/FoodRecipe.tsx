@@ -113,7 +113,7 @@ function FoodRecipe() {
             </div>
             <div className="p-4">
                 <h1 className="font-bold text-2xl">Recommendation:</h1>
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 py-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
                     {food?.recipes.map((data) => {
                         return (
                             <Link to={`/recipes/${data.id}`} key={data.id} className="flex gap-4 rounded-xl shadow-sm shadow-black">
